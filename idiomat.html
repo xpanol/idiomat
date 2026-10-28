@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IDIOMAT · Digital Marketing</title>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--fg:#fff;--mut:#9a9a9a;--line:#333;--acc:#F8AC10;--pur:#a78bfa;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Special Elite","Courier New",monospace;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding:16px}
+.brand{color:var(--acc);font-size:14px;margin:0 0 12px}
+.idea{border:2px solid var(--acc);padding:16px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.idea h1{margin:0;font-size:clamp(24px,6vw,38px);line-height:1.1;font-weight:400}
+.idea h2{margin:2px 0 0;font-size:clamp(24px,6vw,38px);line-height:1.1;font-weight:400;color:var(--acc)}
+.idea p{margin:4px 0;font-size:15px}
+.idea b{font-weight:400;color:var(--mut)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.tab{font:inherit;color:var(--fg);background:none;border:1px solid var(--line);padding:6px 12px;cursor:pointer;min-height:40px}
+.tab[aria-pressed="true"]{background:var(--acc);color:#000;border-color:var(--acc)}
+.tab.seen:not([aria-pressed="true"]){border-color:var(--pur);color:var(--pur)}
+.card{border:1px solid var(--line);padding:0;margin-top:18px;cursor:pointer;transform-origin:top center;touch-action:pan-y;-webkit-tap-highlight-color:transparent;user-select:none}
+.card .en,.card .es{margin:0;font-size:clamp(20px,5vw,28px);line-height:1.25;font-weight:400;text-transform:uppercase;letter-spacing:.03em}
+.card .es{margin-bottom:0}.expr{background:var(--acc);color:#000;padding:20px;min-height:290px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.expr .lab{color:#4a3500}.fg{margin:0 0 16px;line-height:0}.fg svg{height:20px;width:30px;display:block;box-shadow:0 0 0 1px rgba(0,0,0,.3)}.sep{width:56px;height:0;border:0;border-top:1px solid rgba(0,0,0,.35);margin:16px 0}.more{background:#1c1c1c;padding:20px;min-height:340px;display:flex;flex-direction:column;align-items:flex-start}.hint{margin:auto 0 0;padding-top:16px;color:var(--acc);align-self:flex-end}
+.lab{color:var(--mut);font-size:13px;margin:14px 0 2px}
+.card p.ex{margin:0}
+.reg{display:inline-block;border:1px solid var(--pur);color:var(--pur);padding:2px 10px;margin-top:4px}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px}
+.btn{font:inherit;background:var(--acc);color:#000;border:0;padding:10px 16px;cursor:pointer;min-height:44px}
+.btn.ghost{background:none;color:var(--fg);border:1px solid var(--line)}
+.count{color:var(--mut)}
+.note{color:var(--mut);font-size:13px;margin-top:18px}
+:focus-visible{outline:2px solid var(--pur);outline-offset:2px}
+.expr{position:relative;overflow:hidden}.fw{position:absolute;inset:0;pointer-events:none;filter:drop-shadow(-6px 4px 7px rgba(0,0,0,.45))}.fl{position:absolute;inset:0}html{-webkit-text-size-adjust:100%;text-size-adjust:100%}.expr .en,.expr .es{font-size:clamp(20px,5vw,28px);line-height:1.25;font-family:inherit;font-weight:700}.tp{font-size:12px;letter-spacing:.12em;padding:2px 8px;margin:0 0 4px;background:var(--acc);color:#000}.tp.ph{background:none;color:var(--acc);border:1px solid var(--acc)}.tq{display:none}.ytest{display:flex;gap:8px;margin-top:12px;width:100%}.yb{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font:inherit;font-weight:700;background:#000;color:var(--acc);border:0;padding:14px 8px;min-height:48px;cursor:pointer}.yb .fg{margin:0 0 8px}.kb{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:12px;width:100%}.kb .btn{flex:1;min-width:140px;border:3px solid var(--acc);border-radius:10px;text-align:center}.kb .btn.ghost{color:var(--fg)}@media (prefers-reduced-motion:no-preference){#qy{animation:sh .5s ease-in-out .4s 3}@keyframes sh{0%,100%{transform:translateX(0)}20%{transform:translateX(-3px)}40%{transform:translateX(3px)}60%{transform:translateX(-2px)}80%{transform:translateX(2px)}}}.qh{margin:18px 0 0;font-size:15px;font-weight:700}@media (prefers-reduced-motion:no-preference){.yb{animation:pl 1.4s ease-in-out 3}@keyframes pl{50%{transform:scale(1.05)}}}.tq .t1{margin:0;color:var(--acc);font-size:17px}.tq .t2{margin:2px 0 12px;color:var(--mut);font-size:13px}.tq .row{display:flex;gap:8px}.tq .btn{flex:1}.ih{display:flex;justify-content:space-between;align-items:center;color:var(--mut);font-size:14px;margin-bottom:8px}.in{font:inherit;color:var(--acc);background:none;border:1px solid var(--line);width:44px;height:40px;cursor:pointer;font-size:22px;line-height:1}@media (prefers-reduced-motion:no-preference){.card.sl{animation:sl .35s ease-out}@keyframes sl{from{transform:translateX(40px);opacity:0}to{transform:none;opacity:1}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="brand">XPAÑOL · IDIOMAT · Digital Marketing</p>
+<section class="idea" aria-label="IDEA">
+<div class="ih"><button class="in" id="ip" aria-label="Previous IDEA">‹</button><span id="ic">IDEA 01 / 06</span><button class="in" id="inx" aria-label="Next IDEA">›</button></div>
+<h1 id="it">GETTING TO THE POINT</h1>
+<h2 id="is">IR AL GRANO</h2>
+</section>
+<div id="tabs" hidden></div>
+<article class="card" id="card" role="button" tabindex="0" aria-live="polite" aria-label="Next expression"></article>
+<div class="nav">
+<button class="btn ghost" id="prev">Previous</button>
+<span class="count" id="count"></span>
+<button class="btn" id="next">Tap · Toca</button>
+</div>
+<div class="tq"><p class="t1">TEST YOURSELF · PONTE A PRUEBA</p><p class="t2">Cover one language and recall the other. · Tapa un idioma y recuerda el otro.</p><div class="row"><button class="btn" id="tqe">Show EN, recall ES</button><button class="btn" id="tqs">Show ES, recall EN</button></div></div>
+<p class="note">Tap or swipe the card for the next expression. The IDEA stays. Toca o desliza la ficha para ver la siguiente expresión. La IDEA no cambia.</p>
+</div>
+<script>
+const D1=[
+["Get straight to the point","Ir directamente al grano","Let’s get straight to the point: what do the campaign results tell us?","Vayamos directamente al grano: ¿qué nos dicen los resultados de la campaña?","Direct and neutral · Directo y neutro"],
+["Cut to the chase","Dejarse de rodeos","Let’s cut to the chase: the CPA is too high and we need to act.","Dejémonos de rodeos: el CPA es demasiado alto y hay que actuar.","Informal · Informal"],
+["Get down to business","Entrar en materia","Let’s get down to business and review this month’s ad spend.","Entremos en materia y revisemos la inversión publicitaria de este mes.","Neutral, meetings · Neutro, reuniones"],
+["Not beat around the bush","No andarse por las ramas","I won’t beat around the bush: the client is unhappy with the reporting.","No me voy a andar por las ramas: el cliente no está contento con los informes.","Informal, candid · Informal, franco"],
+["Let’s not go around in circles","No demos más vueltas","Let’s not go around in circles: do we scale this campaign or pause it?","No demos más vueltas: ¿escalamos esta campaña o la pausamos?","Informal · Informal"],
+["Let me be blunt","Voy a ser directo","Let me be blunt: the landing page is not converting.","Voy a ser directo: la landing page no está convirtiendo.","Direct, use with care · Directo, con cuidado"],
+["Without further ado","Sin más preámbulos","Without further ado, here are the Q3 performance numbers.","Sin más preámbulos, estas son las cifras de rendimiento del T3.","Formal, presentations · Formal, presentaciones"],
+["To be brief","Para ser breve","To be brief, the new creative doubled our CTR.","Para ser breve, el nuevo creatividad duplicó nuestro CTR.","Formal-neutral · Formal-neutro"],
+["In a nutshell","En pocas palabras","In a nutshell, organic traffic is growing but leads are flat.","En pocas palabras, el tráfico orgánico crece pero los leads se mantienen planos.","Neutral · Neutro"],
+["The bottom line is","Lo esencial es que","The bottom line is that we need a higher ROAS to keep this budget.","Lo esencial es que necesitamos un ROAS más alto para mantener este presupuesto.","Professional · Profesional"],
+["Long story short","Resumiendo","Long story short, the test failed and we are going back to version A.","Resumiendo, la prueba falló y volvemos a la versión A.","Informal-neutral · Informal-neutro"],
+["Let’s skip the preamble","Vayamos al punto","Let’s skip the preamble and go straight to the budget request.","Vayamos al punto y pasemos directamente a la solicitud de presupuesto.","Neutral · Neutro"]
+];
+D1[7][3]="Para ser breve, la nueva creatividad duplicó nuestro CTR.";
+const D2=[
+["Following up on","Dar seguimiento a","I’m following up on the proposal we sent last week.","Le escribo para dar seguimiento a la propuesta que enviamos la semana pasada.","Formal-neutral · Formal-neutro"],
+["Circling back","Retomar el tema","Circling back on the campaign brief: any updates?","Retomo el tema del brief de la campaña: ¿alguna novedad?","Neutral-informal · Neutro-informal"],
+["Touching base","Retomar el contacto","Just touching base to see how the test is going.","Solo retomo el contacto para saber cómo va la prueba.","Informal · Informal"],
+["Checking in","Preguntar cómo va","Just checking in on the creative approval.","Quería preguntar cómo va la aprobación de las creatividades.","Informal-neutral · Informal-neutro"],
+["Just a gentle reminder","Un recordatorio amable","Just a gentle reminder that the report is due on Friday.","Un recordatorio amable: el informe vence el viernes.","Polite · Cortés"],
+["Any update on...?","¿Alguna novedad sobre...?","Any update on the budget approval?","¿Alguna novedad sobre la aprobación del presupuesto?","Neutral · Neutro"],
+["I wanted to follow up","Quería hacer seguimiento","I wanted to follow up on our call about SEO.","Quería hacer seguimiento de nuestra llamada sobre SEO.","Neutral · Neutro"],
+["Bumping this up","Volver a poner esto arriba","Bumping this up in case it got buried in your inbox.","Vuelvo a poner esto arriba por si se perdió en tu bandeja de entrada.","Informal · Informal"]];
+const D3=[
+["Could you clarify...?","¿Podrías aclarar...?","Could you clarify what you mean by qualified leads?","¿Podrías aclarar a qué te refieres con leads cualificados?","Neutral · Neutro"],
+["What do you mean by...?","¿A qué te refieres con...?","What do you mean by brand-safe placements?","¿A qué te refieres con ubicaciones seguras para la marca?","Direct, informal · Directo, informal"],
+["Just to make sure I understand","Solo para asegurarme de que lo entiendo","Just to make sure I understand: are we pausing all paid campaigns?","Solo para asegurarme de que lo entiendo: ¿pausamos todas las campañas de pago?","Polite · Cortés"],
+["Can you walk me through...?","¿Puedes explicarme paso a paso...?","Can you walk me through the attribution model?","¿Puedes explicarme paso a paso el modelo de atribución?","Neutral · Neutro"],
+["Could you be more specific?","¿Podrías ser más concreto?","Could you be more specific about the target audience?","¿Podrías ser más concreto sobre el público objetivo?","Neutral · Neutro"]];
+const D4=[
+["I see it a bit differently","Yo lo veo un poco distinto","I see it a bit differently: I think we should test first.","Yo lo veo un poco distinto: creo que deberíamos probar primero.","Soft · Suave"],
+["I’m not sure that will work","No estoy seguro de que eso funcione","I’m not sure that will work with this budget.","No estoy seguro de que eso funcione con este presupuesto.","Soft · Suave"],
+["With all due respect","Con todo el respeto","With all due respect, the data says otherwise.","Con todo el respeto, los datos dicen lo contrario.","Formal, firm · Formal, firme"],
+["I’d suggest an alternative","Yo propondría una alternativa","I’d suggest an alternative: a smaller pilot.","Yo propondría una alternativa: un piloto más pequeño.","Constructive · Constructivo"],
+["I have some concerns about","Tengo algunas dudas sobre","I have some concerns about the timeline.","Tengo algunas dudas sobre el calendario.","Professional · Profesional"]];
+const D5=[
+["Let me get back to you","Te lo confirmo más tarde","Let me get back to you on the budget by Thursday.","Te lo confirmo sobre el presupuesto antes del jueves.","Neutral · Neutro"],
+["I need to check and get back to you","Tengo que consultarlo y te digo algo","I need to check with the client and get back to you.","Tengo que consultarlo con el cliente y te digo algo.","Neutral · Neutro"],
+["Give me a moment to think","Dame un momento para pensarlo","Give me a moment to think about the options.","Dame un momento para pensar en las opciones.","Informal · Informal"],
+["Let me look into it","Déjame investigarlo","Let me look into it and come back to you tomorrow.","Déjame investigarlo y te cuento mañana.","Neutral · Neutro"],
+["Can I come back to you on that?","¿Puedo responderte más tarde sobre eso?","Can I come back to you on that after the meeting?","¿Puedo responderte sobre eso después de la reunión?","Neutral · Neutro"]];
+const D6=[
+["To wrap up","Para terminar","To wrap up, let’s agree on next steps.","Para terminar, acordemos los próximos pasos.","Neutral · Neutro"],
+["Let’s recap","Hagamos un resumen","Let’s recap what we decided today.","Hagamos un resumen de lo que hemos decidido hoy.","Neutral · Neutro"],
+["To sum up","En resumen","To sum up, we launch on Monday with a smaller budget.","En resumen, lanzamos el lunes con un presupuesto menor.","Neutral-formal · Neutro-formal"],
+["Any final thoughts?","¿Alguna última consideración?","Any final thoughts before we close the meeting?","¿Alguna última consideración antes de cerrar la reunión?","Neutral · Neutro"],
+["That’s all from my side","Por mi parte, eso es todo","That’s all from my side. Thanks, everyone.","Por mi parte, eso es todo. Gracias a todos.","Neutral · Neutro"]];
+const IDEAS=[{t:"GETTING TO THE POINT",s:"IR AL GRANO",d:D1},{t:"FOLLOWING UP",s:"DAR SEGUIMIENTO",d:D2},{t:"ASKING FOR CLARIFICATION",s:"PEDIR ACLARACIÓN",d:D3},{t:"PUSHING BACK POLITELY",s:"DISCREPAR CON EDUCACIÓN",d:D4},{t:"BUYING TIME",s:"GANAR TIEMPO",d:D5},{t:"WRAPPING UP",s:"CERRAR EL TEMA",d:D6}];
+const N1=[
+["Cut to the chase","Dejarse de rodeos","Let’s cut to the chase: the CPA is too high and we need to act.","Dejémonos de rodeos: el CPA es demasiado alto y hay que actuar.","Informal-neutral · Informal-neutro","IDIOM"],
+["Call a spade a spade","Llamar al pan, pan y al vino, vino","Let’s call a spade a spade: this campaign is underperforming.","Llamemos al pan, pan y al vino, vino: esta campaña no está rindiendo.","Candid, firm · Franco, firme","IDIOM"],
+["Not beat around the bush","No andarse por las ramas","I won’t beat around the bush: the client is unhappy with the reporting.","No me voy a andar por las ramas: el cliente no está contento con los informes.","Informal, candid · Informal, franco","IDIOM"],
+["Get to the heart of the matter","Ir al meollo del asunto","Let’s get to the heart of the matter: our CAC is unsustainable.","Vayamos al meollo del asunto: nuestro CAC es insostenible.","Professional · Profesional","IDIOM"],
+["Boil it down to","Reducirlo a lo esencial","Boiling it down, we need more qualified leads, not more traffic.","Reduciéndolo a lo esencial, necesitamos más leads cualificados, no más tráfico.","Neutral-professional · Neutro-profesional","PHRASE"],
+["I’ll be upfront","Seré claro desde el principio","I’ll be upfront: we are over budget on paid social.","Seré claro desde el principio: nos hemos pasado de presupuesto en paid social.","Professional, transparent · Profesional, transparente","PHRASE"],
+["Let’s not sugarcoat it","Sin endulzar las cosas","Let’s not sugarcoat it: the launch missed its targets.","Sin endulzar las cosas: el lanzamiento no alcanzó los objetivos.","Candid, professional · Franco, profesional","IDIOM"],
+["The bottom line is","Lo esencial es que","The bottom line is that we need a higher ROAS to keep this budget.","Lo esencial es que necesitamos un ROAS más alto para mantener este presupuesto.","Professional · Profesional","PHRASE"]];
+const N2=[
+["The ball is in your court","La pelota está en tu tejado","We sent the proposal last week, so the ball is in their court.","Enviamos la propuesta la semana pasada, así que la pelota está en su tejado.","Neutral, idiomatic · Neutro, idiomático","IDIOM"],
+["Circle back","Retomar el tema","Let me circle back on the campaign brief once I hear from legal.","Retomo el tema del brief de la campaña en cuanto tenga noticias de legal.","Business standard · Estándar en empresa","PHRASE"],
+["Sync up","Ponernos al día","Can we sync up on the Q4 plan before Friday?","¿Podemos ponernos al día sobre el plan del T4 antes del viernes?","Tech and agencies · Tecnología y agencias","PHRASE"],
+["Chase up","Reclamar","I need to chase up the signed contract with procurement.","Tengo que reclamar el contrato firmado a compras.","Common in UK business · Habitual en el Reino Unido","PHRASE"],
+["Give someone a nudge","Dar un toque a alguien","I’ll give them a nudge on the creative approval.","Les daré un toque sobre la aprobación de las creatividades.","Informal · Informal","IDIOM"],
+["Per my last email","Como te indicaba en mi último correo","Per my last email, the assets are due on Monday.","Como te indicaba en mi último correo, los materiales vencen el lunes.","Careful: can sound passive-aggressive · Cuidado: puede sonar pasivo-agresivo","PHRASE"],
+["Close the loop","Dejar el tema cerrado","I’d like to close the loop on the invoice issue.","Me gustaría dejar cerrado el tema de la factura.","Professional · Profesional","IDIOM"]];
+const N3=[
+["Spell it out","Explicarlo con peras y manzanas","Could you spell it out for me? What exactly counts as an MQL?","¿Me lo puedes explicar con peras y manzanas? ¿Qué cuenta exactamente como MQL?","Informal · Informal","IDIOM"],
+["Flesh out","Desarrollar un poco más","Could you flesh out the idea of a loyalty funnel?","¿Podrías desarrollar un poco más la idea de un embudo de fidelización?","Professional · Profesional","PHRASE"],
+["Unpack","Desgranar","Can we unpack what you mean by growth hacking?","¿Podemos desgranar a qué te refieres con growth hacking?","Professional · Profesional","PHRASE"],
+["Help me wrap my head around","Ayúdame a verle la lógica","Help me wrap my head around how we attribute offline sales.","Ayúdame a verle la lógica a cómo atribuimos las ventas offline.","Informal-professional · Informal-profesional","IDIOM"],
+["Make sure we’re on the same page","Asegurarnos de estar en la misma sintonía","Just to make sure we’re on the same page: are we pausing all paid campaigns?","Solo para asegurarnos de estar en la misma sintonía: ¿pausamos todas las campañas de pago?","Neutral-professional · Neutro-profesional","IDIOM"],
+["Drill down","Profundizar","Can you drill down into what is driving the drop in conversions?","¿Puedes profundizar en lo que explica la caída de conversiones?","Analytical · Analítico","PHRASE"],
+["I think I’m missing something","Creo que se me escapa algo","I think I’m missing something: why did we cut retargeting?","Creo que se me escapa algo: ¿por qué recortamos el retargeting?","Diplomatic · Diplomático","PHRASE"]];
+const N4=[
+["Play devil’s advocate","Hacer de abogado del diablo","Let me play devil’s advocate: what if the test audience is too small?","Voy a hacer de abogado del diablo: ¿y si la audiencia del test es demasiado pequeña?","Diplomatic · Diplomático","IDIOM"],
+["Take it with a grain of salt","Tomarlo con pinzas","I’d take those numbers with a grain of salt until we validate the tracking.","Yo tomaría esas cifras con pinzas hasta validar el tracking.","Soft, analytical · Suave, analítico","IDIOM"],
+["Not to rain on the parade, but","No quiero aguar la fiesta, pero","Not to rain on the parade, but the launch date looks unrealistic.","No quiero aguar la fiesta, pero la fecha de lanzamiento parece poco realista.","Informal, soft · Informal, suave","IDIOM"],
+["Raise a red flag","Dar la voz de alarma","I have to raise a red flag about the timeline.","Tengo que dar la voz de alarma sobre el calendario.","Professional, firm · Profesional, firme","IDIOM"],
+["I’d beg to differ","Me permito discrepar","I’d beg to differ: the sample size is too small.","Me permito discrepar: la muestra es demasiado pequeña.","Formal, polite · Formal, cortés","PHRASE"],
+["Challenge that assumption","Cuestionar esa premisa","I’d like to challenge that assumption before we commit budget.","Me gustaría cuestionar esa premisa antes de comprometer presupuesto.","Professional · Profesional","PHRASE"],
+["I’m not sure we’re aligned on","No estoy seguro de que estemos alineados en","I’m not sure we’re aligned on the success metrics.","No estoy seguro de que estemos alineados en las métricas de éxito.","Diplomatic · Diplomático","PHRASE"]];
+const N5=[
+["Sleep on it","Consultarlo con la almohada","Let me sleep on it and give you an answer tomorrow.","Déjame consultarlo con la almohada y mañana te doy una respuesta.","Neutral, idiomatic · Neutro, idiomático","IDIOM"],
+["Put a pin in it","Dejarlo aparcado","Let’s put a pin in this and revisit it next week.","Dejemos esto aparcado y lo retomamos la semana que viene.","US business · Empresa, EE. UU.","IDIOM"],
+["Don’t jump the gun","No adelantar acontecimientos","Let’s not jump the gun before we see the test results.","No adelantemos acontecimientos antes de ver los resultados del test.","Neutral · Neutro","IDIOM"],
+["Run it by the team","Consultarlo con el equipo","I need to run it by the team before I commit.","Tengo que consultarlo con el equipo antes de comprometerme.","Professional · Profesional","PHRASE"],
+["Get back to you by EOD","Responderte a final del día","I’ll get back to you by EOD with the revised numbers.","Te respondo a final del día con las cifras revisadas.","Business standard · Estándar en empresa","PHRASE"],
+["Take this offline","Verlo fuera de la reunión","Let’s take this offline and give it proper thought.","Veámoslo fuera de la reunión y démosle una buena vuelta.","Meetings · Reuniones","PHRASE"],
+["Buy us some time","Ganar algo de tiempo","A short extension would buy us some time to finish the audit.","Una pequeña prórroga nos daría algo de tiempo para terminar la auditoría.","Neutral-professional · Neutro-profesional","PHRASE"],
+["Weigh our options","Barajar posibilidades","We’re still weighing our options and will come back to you next week.","Seguimos barajando posibilidades y te respondemos la semana que viene.","Professional · Profesional","PHRASE"]];
+const N6=[
+["Call it a day","Dejarlo por hoy","We’ve covered a lot, so let’s call it a day.","Hemos tratado mucho, así que dejémoslo por hoy.","Informal-neutral · Informal-neutro","IDIOM"],
+["Tie up loose ends","Atar cabos sueltos","Before we close, let’s tie up a few loose ends.","Antes de cerrar, atemos unos cuantos cabos sueltos.","Professional · Profesional","IDIOM"],
+["That’s a wrap","Con esto cerramos","That’s a wrap on Q3 planning. Thank you all.","Con esto cerramos la planificación del T3. Gracias a todos.","Informal-neutral · Informal-neutro","IDIOM"],
+["Key takeaways","Conclusiones clave","Let me summarize the key takeaways from today.","Resumo las conclusiones clave de hoy.","Professional · Profesional","PHRASE"],
+["Next steps and owners","Próximos pasos y responsables","Before we close, let’s confirm next steps and owners.","Antes de cerrar, confirmemos los próximos pasos y los responsables.","Business standard · Estándar en empresa","PHRASE"],
+["Last but not least","Por último, pero no menos importante","Last but not least, a reminder that reports are due on Friday.","Por último, pero no menos importante, recuerdo que los informes vencen el viernes.","Neutral-formal · Neutro-formal","PHRASE"],
+["Let’s wrap this up","Vamos cerrando","Let’s wrap this up so everyone can get back to their campaigns.","Vamos cerrando para que todos puedan volver a sus campañas.","Neutral · Neutro","PHRASE"]];
+IDEAS[0].d=N1;IDEAS[1].d=N2;IDEAS[2].d=N3;IDEAS[3].d=N4;IDEAS[4].d=N5;IDEAS[5].d=N6;
+let D=N1;
+const FEN='<div class="fg" role="img" aria-label="English"><svg viewBox="0 0 60 30" preserveAspectRatio="none"><clipPath id="fs"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="ft"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#fs)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ft)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg></div>',FES='<div class="fg" role="img" aria-label="Español"><svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></svg></div>';
+let busy=false,i=0,idea=0;const seen=new Set([0]);
+const tabs=document.getElementById('tabs'),card=document.getElementById('card'),count=document.getElementById('count');
+D.forEach((d,k)=>{const b=document.createElement('button');b.className='tab';b.textContent=(k+1);b.setAttribute('aria-label','Expression '+(k+1)+': '+d[0]);b.onclick=()=>go(k);tabs.appendChild(b)});
+function clip(poly,M,n,neg){const o=[];for(let a=0;a<poly.length;a++){const A=poly[a],B=poly[(a+1)%poly.length];const da=(A[0]-M[0])*n[0]+(A[1]-M[1])*n[1],db=(B[0]-M[0])*n[0]+(B[1]-M[1])*n[1];const ia=neg?da<=0:da>=0,ib=neg?db<=0:db>=0;if(ia)o.push(A);if(ia!==ib){const t=da/(da-db);o.push([A[0]+t*(B[0]-A[0]),A[1]+t*(B[1]-A[1])])}}return o}
+function curl(box,old,dir){const W=box.offsetWidth,H=box.offsetHeight;old.style.cssText='position:absolute;inset:0;margin:0;';const fw=document.createElement('div'),fl=document.createElement('div');fw.className='fw';fl.className='fl';fw.appendChild(fl);box.append(old,fw);
+const R=[[0,0],[W,0],[W,H],[0,H]],mx=x=>dir>0?x:W-x,t0=performance.now(),dur=850;
+const poly=p=>p.length<3?'polygon(0 0,0 0,0 0)':'polygon('+p.map(q=>mx(q[0]).toFixed(1)+'px '+q[1].toFixed(1)+'px').join(',')+')';
+function frame(now){let p=Math.min(1,(now-t0)/dur);let e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;e=Math.max(e,.003);
+const C=[W-e*2*W,H-Math.sin(e*Math.PI)*H*.45],dx=W-C[0],dy=H-C[1],len=Math.hypot(dx,dy),n=[dx/len,dy/len],M=[(W+C[0])/2,(H+C[1])/2];
+old.style.clipPath=poly(clip(R,M,n,true));
+const fp=clip(R,M,n,false).map(q=>{const d=(q[0]-M[0])*n[0]+(q[1]-M[1])*n[1];return[q[0]-2*d*n[0],q[1]-2*d*n[1]]});
+fl.style.clipPath=poly(fp);
+const nx=n[0]*dir,ny=n[1],th=Math.atan2(nx,-ny)*180/Math.PI,L=W*Math.abs(nx)+H*Math.abs(ny),s=(mx(M[0])-W/2)*nx+(M[1]-H/2)*ny+L/2;
+fl.style.background='linear-gradient('+th.toFixed(1)+'deg,#ffd27a '+(s-80).toFixed(1)+'px,#e0a010 '+(s-14).toFixed(1)+'px,#8a5a00 '+s.toFixed(1)+'px)';
+if(p<1)requestAnimationFrame(frame);else{old.remove();fw.remove();busy=false}}
+requestAnimationFrame(frame)}
+function go(k){if(busy||quiz)return;const ex=card.querySelector('.expr');if(!ex||matchMedia('(prefers-reduced-motion: reduce)').matches){render(k);return}busy=true;const dir=((k-i+D.length+1)%(D.length+1))===1?1:-1;const old=ex.cloneNode(true);render(k);curl(card.querySelector('.expr'),old,dir)}
+function render(k){const N=D.length+1;i=(k+N)%N;seen.add(i);if(i===D.length){card.innerHTML='<div class="expr"><p class="en">IDEA '+(idea+1)+' completa</p><hr class="sep"><p class="es">IDEA '+(idea+1)+' complete</p><p class="qh">¿TE PONES A PRUEBA? · TEST YOURSELF?</p><div class="ytest"><button class="yb" id="qe" aria-label="Show English first">'+FEN+'<span>first / primero</span></button><button class="yb" id="qs" aria-label="Enseña español primero">'+FES+'<span>first / primero</span></button></div></div><div class="more"><p class="lab">No test? Continue · ¿Sin test? Continúa</p><button class="btn" id="ni">Next IDEA ›</button><button class="btn ghost" id="rp" style="margin-top:10px">Repeat · Repetir ↺</button></div>';document.getElementById('ni').onclick=e=>{e.stopPropagation();setIdea(idea+1)};document.getElementById('rp').onclick=e=>{e.stopPropagation();go(0)};document.getElementById('qe').onclick=e=>{e.stopPropagation();qStart('EN')};document.getElementById('qs').onclick=e=>{e.stopPropagation();qStart('ES')};count.textContent='✓ '+D.length+' / '+D.length;return}const d=D[i];
+card.innerHTML='<div class="expr">'+FEN+'<p class="en"></p><hr class="sep">'+FES+'<p class="es"></p></div><div class="more"><span class="tp" id="tp"></span><p class="lab">Example · Ejemplo (EN)</p><p class="ex" id="x1"></p><p class="lab">Ejemplo · Example (ES)</p><p class="ex" id="x2"></p><p class="lab">Register · Registro</p><span class="reg" id="rg"></span><p class="hint">Tap or swipe · Toca o desliza ›</p></div>';
+card.querySelector('.en').textContent=d[0];card.querySelector('.es').textContent=d[1];
+document.getElementById('x1').textContent=d[2];document.getElementById('x2').textContent=d[3];document.getElementById('rg').textContent=d[4];const tp=document.getElementById('tp');tp.textContent=d[5];tp.className='tp '+(d[5]==='IDIOM'?'id':'ph');
+
+count.textContent=(i+1)+' / '+D.length;
+[...tabs.children].forEach((t,j)=>{t.setAttribute('aria-pressed',j===i);t.classList.toggle('seen',seen.has(j))})}
+document.getElementById('next').onclick=()=>go(i+1);
+document.getElementById('prev').onclick=()=>go(i-1);
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)});
+let sx=null,sw=false;card.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sw=false},{passive:true});card.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50){sw=true;go(dx<0?i+1:i-1)}},{passive:true});
+card.onclick=()=>{if(sw){sw=false;return}if(quiz){qTap();return}go(i+1)};
+card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go(i+1)}});
+const IT=document.getElementById('it'),IS=document.getElementById('is'),IC=document.getElementById('ic');
+function setIdea(n){if(busy)return;quiz=null;qBtn();idea=(n+IDEAS.length)%IDEAS.length;D=IDEAS[idea].d;IT.textContent=IDEAS[idea].t;IS.textContent=IDEAS[idea].s;IC.textContent='IDEA 0'+(idea+1)+' / 0'+IDEAS.length;seen.clear();render(0);card.classList.remove('sl');void card.offsetWidth;card.classList.add('sl')}
+document.getElementById('ip').onclick=()=>setIdea(idea-1);document.getElementById('inx').onclick=()=>setIdea(idea+1);
+let quiz=null;
+function qBtn(){document.getElementById('prev').textContent='Previous';document.getElementById('next').textContent='Tap · Toca'}
+function qExit(){quiz=null;qBtn();render(D.length)}
+function qStart(lang){const ord=D.map((_,k)=>k);for(let a=ord.length-1;a>0;a--){const b=Math.floor(Math.random()*(a+1));[ord[a],ord[b]]=[ord[b],ord[a]]}quiz={lang:lang,ord:ord,p:0,rev:false,ok:0,end:false};qRender();card.classList.remove('sl');void card.offsetWidth;card.classList.add('sl')}
+function qRender(){const q=quiz,d=D[q.ord[q.p]],s=q.lang==='EN'?0:1,fa=s?FES:FEN,fb=s?FEN:FES;
+card.innerHTML='<div class="expr">'+fa+'<p class="en" id="qa"></p><hr class="sep">'+fb+'<p class="en" id="qb"></p></div><div class="more"><div id="qd" style="width:100%"></div><p class="lab" id="ql"></p></div>';
+document.getElementById('qa').textContent=d[s];document.getElementById('qb').textContent='? ? ?';
+document.getElementById('ql').textContent='Say it in the other language, then tap to check. · Dilo en el otro idioma y toca para comprobar.';
+count.textContent='Test '+(q.p+1)+' / '+D.length;document.getElementById('prev').textContent='Exit · Salir';document.getElementById('next').textContent='Check · Comprobar'}
+function qTap(){const q=quiz;if(q.end)return;if(!q.rev){q.rev=true;const d=D[q.ord[q.p]],s=q.lang==='EN'?0:1;document.getElementById('qb').textContent=d[1-s];document.getElementById('ql').textContent='';
+const qd=document.getElementById('qd');qd.innerHTML='<div class="kb"><button class="btn" id="qy">Lo sabía · I knew it</button><button class="btn ghost" id="qn">Aún no · Not yet</button></div><p class="lab">Example · Ejemplo</p><p class="ex" id="e1"></p><p class="ex" id="e3" style="margin-top:6px"></p><p class="lab">Register · Registro</p><span class="reg" id="e2"></span>';
+document.getElementById('e1').textContent=d[2];document.getElementById('e3').textContent=d[3];document.getElementById('e2').textContent=d[4];
+document.getElementById('qy').onclick=e=>{e.stopPropagation();q.ok++;qNext()};document.getElementById('qn').onclick=e=>{e.stopPropagation();qNext()};document.getElementById('next').textContent='Next · Siguiente';return}qNext()}
+function qNext(){const q=quiz;q.p++;q.rev=false;if(q.p>=D.length)qEnd();else qRender()}
+function qEnd(){const q=quiz;q.end=true;card.innerHTML='<div class="expr"><p class="en" id="r1"></p><hr class="sep"><p class="en" id="r2"></p></div><div class="more"><button class="btn" id="ra">Repeat test · Repetir test ↺</button><button class="btn ghost" id="rb" style="margin-top:10px">Next IDEA ›</button><button class="btn ghost" id="rc" style="margin-top:10px">Back · Volver</button></div>';
+document.getElementById('r1').textContent='YOU KNEW '+q.ok+' / '+D.length;document.getElementById('r2').textContent='LO SABÍAS '+q.ok+' / '+D.length;const lg=q.lang;
+document.getElementById('ra').onclick=e=>{e.stopPropagation();qStart(lg)};document.getElementById('rb').onclick=e=>{e.stopPropagation();setIdea(idea+1)};document.getElementById('rc').onclick=e=>{e.stopPropagation();qExit()};
+count.textContent='✓ Test';document.getElementById('prev').textContent='Exit · Salir';document.getElementById('next').textContent='Back · Volver'}
+document.getElementById('next').onclick=()=>quiz?(quiz.end?qExit():qTap()):go(i+1);
+document.getElementById('prev').onclick=()=>quiz?qExit():go(i-1);
+document.getElementById('tqe').onclick=()=>{if(!busy)qStart('EN')};document.getElementById('tqs').onclick=()=>{if(!busy)qStart('ES')};
+render(0);
+</script>
+</body>
+</html>
